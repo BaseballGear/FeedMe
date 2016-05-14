@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textEmailAddress"
+        android:ems="12"
+        android:id="@+id/regEmailText"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="Enter an Email" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textEmailAddress"
+        android:ems="12"
+        android:id="@+id/chkEmailText"
+        android:hint="Retype Email"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/regEmailText"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/regPassText"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="Enter a Password"
+        android:layout_below="@+id/chkEmailText"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/chkPassText"
+        android:hint="Retype Password"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/regPassText"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Create Account"
+        android:id="@+id/createAccountButton"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chkPassText"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"/>
+</LinearLayout>

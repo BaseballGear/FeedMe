@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/firstName"
+        android:layout_below="@+id/userPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:id="@+id/lastName"
+        android:layout_below="@+id/userPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:id="@+id/userPhone"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Enter PayPal Email"
+        android:id="@+id/userPayPal"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/userPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/signUpTxt"
+            android:text="Don't have PayPal?"
+            android:paddingLeft="30dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linkToPP"
+            android:text="@string/signUpHere"
+            android:textColor="#007FFF"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Submit User Info"
+        android:id="@+id/submitUserInfoBtn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/userPayPal"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="16dp"/>
+
+</LinearLayout>

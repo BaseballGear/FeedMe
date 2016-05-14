@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Terms And Conditions"
+            android:id="@+id/termsAndConditions"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="        Welcome to FeedMe - Deliverer
+
+
+    Before you get started please read the terms and conditions. As a deliverer I understand that if I accept and order it is my responsibility to pay for the order, deliver it as fast as possible, and follow the instructions given by the customer. In addition, I may not give out any personal information relating to the customer. Once the delivery is made you will give the receipt to the customer and then they will send a PayPal payment to your Paypal. This payment will consist of the total of the purchase, a $5 convenience/delivery charge, and an additional tip. To make sure that you apply by these conditions, and follow the customers instructions you will be charged a $10 security fee. This fee is to insure that all instructions are met, and the food gets delivered. Once upon delivery/payment the $10 will be refunded back to you."
+            android:id="@+id/theTerms"
+            android:paddingLeft="50dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:textSize="14dp"
+            android:lineSpacingMultiplier="1.5"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <CheckBox
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="I Accept the Terms and Conditions"
+                android:id="@+id/acceptBox"
+                android:paddingTop="10dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Lets start delivering "
+                android:id="@+id/toOrderButton"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
